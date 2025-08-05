@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Netsafe UI Replica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans antialiased text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="container h-20 flex items-center justify-around print:justify-between">
+        <div
+          class="text-[46px] font-bold hover:text-purple-500 cursor-pointer ">netsafe</div>
+        <nav class="hidden lg:flex gap-6 text-sm font-medium">
+          <div class="hover:text-purple-500">
+            <a href="#"
+              class="hover:text-purple-500 text-[16px] font-lexend">About</a>
+            <i style="font-size: 10px;" class="fa-solid fa-chevron-down "></i>
+          </div>
+
+          <div class="hover:text-purple-500">
+            <a href="#" class="hover:text-purple-500 text-[16px]">Advice &
+              Support</a>
+            <i style="font-size: 10px;" class="fa-solid fa-chevron-down "></i>
+          </div>
+          <div class="hover:text-purple-500">
+            <a href="#" class="hover:text-purple-500 text-[16px]">Issues &
+              Topics</a>
+            <i style="font-size: 10px;" class="fa-solid fa-chevron-down "></i>
+          </div>
+          <div class="hover:text-purple-500">
+            <a href="#" class="hover:text-purple-500 text-[16px]">Education</a>
+            <i style="font-size: 10px;" class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="hover:text-purple-500">
+            <a href="#" class="hover:text-purple-500 text-[16px]">Donate</a>
+            <i style="font-size: 10px;" class="fa-solid fa-chevron-down "></i>
+          </div>
+        </nav>
+        <div class="flex items-center gap-4">
+
+          <button
+            class="w-[50px] h-[50px] bg-[#f7f8f7] rounded-full flex justify-center ">
+            <i
+              class="fa-solid fa-magnifying-glass flex justify-center items-center text-[20px]"></i>
+          </button>
+          <button
+            class="inline-flex items-center justify-center border border-transparent 
+                    focus:outline-offset-4 rounded font-medium py-2 px-4 bg-[#dcf506]
+                     text-black hover:bg-black hover:text-white transition-colors duration-300">
+            <p>Get Help</p>
+          </button>
+          <button class="lg:hidden text-2xl">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-[#333] relative text-white text-center pt-16 pb-0 px-6 lg:px-0">
+      <!-- Decorative lines -->
+      <!-- <div class="absolute top-10 left-4 w-16 h-2 bg-lime-300"></div>
+      <div class="absolute top-24 left-4 w-24 h-2 bg-purple-400"></div>
+      <div class="absolute top-36 left-8 w-32 h-2 bg-fuchsia-600"></div>
+      <div class="absolute bottom-10 right-4 w-24 h-2 bg-purple-400"></div>
+      <div class="absolute top-10 right-4 w-20 h-2 bg-fuchsia-600"></div>
+      <div class="absolute top-24 right-4 w-12 h-2 bg-lime-300"></div> -->
+
+      <!-- Content -->
+      <div class="max-w-3xl mx-auto">
+        <svg width="322" height="281" viewBox="0 0 322 281" fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute -top-4 w-[110px] md:w-[180px] md:top-0 lg:top-24 lg:w-[300px] xl:block left-0 right-auto rotate-180 z-10">
+          <rect x="280" y="0.5" width="42" height="28"
+            fill="#DDA7FF" />
+          <rect x="252" y="28.5" width="28" height="28"
+            fill="#ffffff" />
+          <rect x="160" y="140.5" width="229" height="28"
+            fill="#DDA7FF" />
+          <rect x="235" y="224.5" width="154" height="28"
+            fill="#DDF606" />
+          <rect x="67" y="83.5" width="170" height="28"
+            fill="#AA23FF" />
+        </svg>
+        <h1 class="text-[70px]  font-bold leading-tight mb-6">
+          Helping New Zealand Stay Safe Online
+        </h1>
+        <p class="text-[19px] font-medium mb-10 mt-10">
+          For over 25 years, Netsafe has supported people across New Zealand to
+          have safe and positive online experiences, by providing free support,
+          advice and education to all ages.
+        </p>
+
+        <!-- Search Box -->
+        <div class="relative max-w-2xl mx-auto ">
+          <input
+            type="text"
+            placeholder="Search hundreds of support guides, resources and articles"
+            class="w-full mt-10 py-4 px-6 rounded-md shadow-md text-black text-lg placeholder-gray-500" />
+          <i
+            class="fa-solid mt-4 fa-magnifying-glass absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500 text-2xl "></i>
+        </div>
+
+        <div>
+          <svg width="322" height="281" viewBox="0 0 322 281" fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute -top-4 right-0 w-[110px] md:w-[180px] md:top-0 lg:top-24 lg:w-[300px] hidden xl:block">
+            <rect x="280" y="0.5" width="42" height="28"
+              fill="#DDA7FF" />
+            <rect x="252" y="28.5" width="28" height="28"
+              fill="#ffffff" />
+            <rect x="160" y="140.5" width="229" height="28"
+              fill="#DDA7FF" />
+            <rect x="235" y="224.5" width="154" height="28"
+              fill="#DDF606" />
+            <rect x="67" y="83.5" width="170" height="28"
+              fill="#AA23FF" />
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Purple Gradient Footer Strip -->
+    <!-- <div class="h-16 bg-gradient-to-r from-purple-500 to-fuchsia-500"></div> -->
+    <div class="bg-purple-600 text-white font-sans">
+      <!-- Container -->
+      <div class="max-w-5xl mx-auto px-4 py-10">
+        <!-- Heading -->
+        <h1 class="mt-10 flex text-[32px] font-bold text-center mb-8">We’re here
+          for
+          you</h1>
+
+        <!-- Support Options Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <!-- Report Online -->
+          <div
+            class="bg-white text-black rounded-xl p-6 shadow-lg hover:bg-[#dcf506] transition-colors duration-300">
+
+            <div
+              class="text-[20px] mr-12 font-medium mt-8 pb-4 hidden sm:block text-start border-b border-dashed border-black w-full sm:mt-3 lg:mt-0">
+              Report Online
+            </div>
+
+            <h2 class="font-medium mt-6 mr-16 text-[15px] mb-1 w-full">
+              Submit an online harm report
+            </h2>
+
+            <!-- Icon report online -->
+            <div
+              class="flex items-center flex-col order-1 sm:order-2 p-0 mb-4 sm:mb-0 sm:mt-6 lg:mt-0 sm:items-end">
+              <img class="mt-16"
+                src="https://netsafe.org.nz/icons/exclamation.svg" alt>
+            </div>
+          </div>
+
+          <!-- Text Us -->
+          <div
+            class="bg-white text-black rounded-xl p-6 shadow-lg hover:bg-[#dcf506] transition-colors duration-300">
+
+            <div
+              class="text-[20px] mr-12 font-medium mt-8 pb-4 hidden sm:block text-start border-b border-dashed border-black w-full sm:mt-3 lg:mt-0">
+              Text Us
+            </div>
+
+            <h2 class="font-medium mt-6 mr-16 text-[15px] mb-1 w-full">
+              Text "Netsafe" to 4282
+            </h2>
+
+            <!-- Icon text us -->
+            <div style="margin-top: 26px;"
+              class="flex items-center flex-col order-1 sm:order-2 p-0 mb-4 sm:mb-0 sm:mt-6 lg:mt-0 sm:items-end">
+              <img class="mt-16"
+                src="https://netsafe.org.nz/icons/text.svg" alt>
+            </div>
+          </div>
+
+          <!-- Chatbot -->
+          <div
+            class="bg-white text-black rounded-xl p-6 shadow-lg hover:bg-[#dcf506] transition-colors duration-300">
+
+            <div
+              class="text-[20px] mr-12 font-medium mt-8 pb-4 hidden sm:block text-start border-b border-dashed border-black w-full sm:mt-3 lg:mt-0">
+              Online Chat
+            </div>
+
+            <h2 class="font-medium mt-6 mr-16 text-[15px] mb-1 w-full">
+              Via our chatbot Kora
+            </h2>
+
+            <!-- Icon Chat bot -->
+            <div style="margin-top: 26px;"
+              class="flex items-center flex-col order-1 sm:order-2 p-0 mb-4 sm:mb-0 sm:mt-6 lg:mt-0 sm:items-end">
+              <img class="mt-16"
+                src="https://netsafe.org.nz/icons/chatbot.svg" alt>
+            </div>
+          </div>
+
+          <!-- Call Us -->
+          <div
+            class="bg-white text-black rounded-xl p-6 shadow-lg hover:bg-[#dcf506] transition-colors duration-300">
+
+            <div
+              class="text-[20px] mr-12 font-medium mt-8 pb-4 hidden sm:block text-start border-b border-dashed border-black w-full sm:mt-3 lg:mt-0">
+              Call Us
+            </div>
+
+            <h2 class="font-medium mt-6 mr-16 text-[15px] mb-1 w-full">
+              Call 0508 638 723
+            </h2>
+
+            <!-- Icon Call us-->
+            <div style="margin-top: 26px;"
+              class="flex items-center flex-col order-1 sm:order-2 p-0 mb-4 sm:mb-0 sm:mt-6 lg:mt-0 sm:items-end">
+              <img class="mt-16"
+                src="https://netsafe.org.nz/icons/phone.svg" alt>
+            </div>
+          </div>
+
+          <!-- Emergency Safety Note -->
+          <!-- <div
+            class=" w-full text-center text-white text-lg font-semibold mb-6">
+            If you’re concerned about the immediate safety of you or someone
+            else,
+            <span
+              class="bg-yellow-300 text-black px-2 py-1 rounded font-bold">call
+              111</span>
+          </div> -->
+        </div>
+        <div
+          class=" w-full text-center text-white text-lg font-semibold mb-6">
+          If you’re concerned about the immediate safety of you or someone
+          else,
+          <span
+            class="bg-[#d9f506] text-black  font-bold">call
+            111</span>
+        </div>
+        <!-- Floating Chatbot Button (Optional) -->
+        <div class="fixed bottom-4 right-4">
+          <button
+            class="bg-white text-black rounded-full px-4 py-3 shadow-lg flex items-center space-x-2">
+            <span class="font-bold">Ask Kora</span>
+            <span class="text-xl">🤖</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-[#000000] text-white py-[90px] print-py">
+        <div>
+          <div class="container flex flex-col gap-y-8">
+  <h2 class="text-3xl md:text-[45px] ml-[100px]">Advice & Support for...</h2>
+  <div class="hidden lg:flex flex-wrap gap-10 pt-16 justify-center">
+    <!-- Card 1 -->
+   <div class="group pb-2 relative flex flex-col h-full max-w-[300px]">
+  
+  <!-- Đường line phía trên -->
+  <div class="border-t border-gray-400 w-full">
+    <h3 class="mt-8 mb-8 font-medium text-[18px]">Children and young people</h3>
+  </div>
+
+  <!-- Hình ảnh -->
+  <div class="h-[24.125rem] overflow-hidden relative">
+    <img src="./image/children.webp" alt="">
+  </div>
+
+  <!-- Nội dung mô tả -->
+  <p class="mt-8 text-[16px] leading-[24px] text-white font-medium">
+    Empower yourself as you grow up in the digital age with top tips, resources and advice to stay safe online.
+  </p>
+
+  <div class="border-t border-gray-400 w-full mt-8"></div>
+
+</div>
+
+    <!-- Card 2 -->
+    <div class="group pb-2 relative flex flex-col h-full max-w-[300px]">
+      <div class="border-t border-gray-400 w-full">
+         <h3 class="mt-8 mb-8 font-medium text-[18px]">Parents and caregives </h3>
+      </div>
+    <div class="h-[24.125rem] overflow-hidden relative">
+      <img src="./image/card2.webp" alt="">
+    </div>
+    <p class="mt-4 text-[16px] leading-[24px] text-white font-medium leading-[24px] mt-8">
+      Safeguard the whānau you cherish with helpful information and guidance on a range of key online safety topics
+    </p>
+
+    <div class="border-t border-gray-400 w-full mt-8"></div>
+  </div>
+
+    <!-- Card 3 -->
+    <div class="group pb-2 relative flex flex-col h-full max-w-[300px]">
+      <div class="border-t border-gray-400 w-full">
+         <h3 class="mt-8 mb-8 font-medium text-[18px]">Adults</h3>
+      </div>
+    <div class="h-[24.125rem] overflow-hidden relative">
+      <img src="./image/card3.webp" alt="">
+    </div>
+    <p class="mt-4 text-[16px] leading-[24px] text-white font-medium leading-[24px] mt-8">
+      Navigate the digital world confidently with our resources designed to support positive online experiences
+    </p>
+
+    <div class="border-t border-gray-400 w-full mt-8"></div>
+  </div>
+
+    <!-- Card 4 -->
+    <div class="group pb-2 relative flex flex-col h-full max-w-[300px]">
+      <div class="border-t border-gray-400 w-full">
+         <h3 class="mt-8 mb-8 font-medium text-[18px]">Older People</h3>
+      </div>
+    <div class="h-[24.125rem] overflow-hidden relative">
+      <img src="./image/card4.webp" alt="">
+    </div>
+    <p class="mt-4 text-[16px] leading-[24px] text-white font-medium leading-[24px] mt-8">
+      Feel confident using technology as you get older with our easy resources and advice for staying safe online
+    </p>
+
+    <div class="border-t border-gray-400 w-full mt-8"></div>
+  </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <!-- <div class="bg-gray-900 text-white font-sans">
+        <section class="max-w-7xl mx-auto px-4 py-12">
+          <h2 class="text-[45px] md:text-4xl font-semibold mb-8 text-white">
+            Advice & Support for...
+          </h2>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            
+          <!-- Mobile Pagination & Arrows -->
+          <div class="mt-8 flex justify-center items-center gap-6 sm:hidden">
+            <button
+              class="text-white bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center">
+              ←
+            </button>
+            <div class="flex gap-1">
+              <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
+              <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+              <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+            </div>
+            <button
+              class="text-white bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center">
+              →
+            </button>
+          </div>
+
+          <!-- Floating Chat Button -->
+          <div class="fixed bottom-6 right-6">
+            <button
+              class="bg-purple-300 text-black font-bold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+              <span>Ask Kora</span>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M2 2v20l4-4h16V2H2zm18 12H6l-2 2V4h16v10z" />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div> 
+
+      <!-- <div class="bg-gray-50 font-sans">
+        <div class="container mx-auto p-4 max-w-md">
+          <h1 class="text-3xl font-bold mb-4">Featured resources</h1>
+          <p class="text-purple-600 mb-4">Recommended</p>
+          <div class="space-y-4">
+            <div class="border-b pb-4">
+              <h2 class="text-xl font-semibold">Sextortion</h2>
+              <p class="text-gray-600">
+                Learn more about sextortion and get tips to help you stay safe
+                online.
+              </p>
+            </div>
+            <div class="border-b pb-4">
+              <h2 class="text-xl font-semibold">TikTok</h2>
+              <p class="text-gray-600">
+                A specially-designed Guardian Guide for New Zealand parents and
+                carers, to support you to help teens navigate TikTok's platform.
+              </p>
+            </div>
+            <div class="pb-4">
+              <h2 class="text-xl font-semibold">Romance scams</h2>
+              <p class="text-gray-600">
+                Learn more about romance scams and get tips to help you stay
+                safe
+                online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div>
+        <h2 class=" text-[45px] font-medium mt-14 mb-14 ml-24">Featured resources</h2>
+        <div class="flex justify-around">
+          <div class="">
+            <img src="./image/Featured.webp" alt="">
+          </div>
+          <div class="w-[37%] ml-[200px]">
+            <ul>
+            <li> 
+              <div class="text-[#ab23ff] mb-6 font-bold text-[16px]">
+                Recommended
+              </div>
+              <a class="text-[24px] font-medium hover:text-[#A823FB] cursor-pointer transition-colors duration-200 " href="">Sextortion</a>
+              <p class="mt-4 mb-4 text-[#4D4D4D]">Learn more about sextortion and get tips to help you stay safe online.</p>
+              <div class=" mt-6 mb-8 border-b border-dashed border-gray-400 w-full"></div>
+            </li>
+            <li>
+              <a class="text-[24px] font-medium hover:text-[#A823FB] cursor-pointer transition-colors duration-200" href="">TikTok</a>
+              <p class="mt-4 mb-4 text-[#4D4D4D]">A specially-designed Guardian Guide for New Zealand parents and carers, to support you to help teens navigate TikTok's platform.</p>
+              <div class=" mt-6 mb-8 border-b border-dashed border-gray-400 w-full"></div>
+            </li>
+            <li>
+              <a class="text-[24px] font-medium hover:text-[#A823FB] cursor-pointer transition-colors duration-200" href="">Romance scams</a>
+              <p class="mt-4 mb-4 text-[#4D4D4D]">Learn more about romance scams and get tips to help you stay safe online.</p>
+              <div class=" mt-6 mb-24 border-b border-dashed border-gray-400 w-full"></div>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex p-[100px]">
+        <div class="p-[14px]">
+          <h2 class="text-[24px] font-medium mb-6">Issues & Topic</h2>
+          <p class="text-[16px]">Here you'll find the latest advice and guidance on the issues affecting New Zealanders online today</p>
+        </div>
+        <div class="">
+  <ul class="flex flex-wrap gap-2.5">
+
+    <!-- Online -->
+    <li class="group bg-[#f8f8f8] hover:bg-[#dcf40c] transition-all duration-300 rounded-md p-[26px] w-full md:w-[48%] lg:w-[24.2%]">
+      <p class="font-semibold text-[20px] mb-2 pt-[24px] mb-6">Online abuse & harassment</p>
+      <div class="border-b border-dashed border-gray-400 mb-6"></div>
+      <p class="text-[16px] text-gray-800 mb-24">
+       Information and advice on the types of online abuse and harassment.
+      </p>
+      <p class="text-[#A823FB] text-[16px] font-medium cursor-pointer pb-[40px]">Read More <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></p>
+    </li>
+
+    <!-- scams -->
+    <li class="group bg-[#f8f8f8] hover:bg-[#dcf40c] transition-all duration-300 rounded-md p-[26px] w-full md:w-[48%] lg:w-[24.2%]">
+      <p class="font-semibold text-[20px] mb-2 pt-[24px] mb-6 pt-[52px]">Scams</p>
+      <div class="border-b border-dashed border-gray-400 mb-6"></div>
+      <p class="text-[16px] text-gray-800 mb-12">
+       Get information and advice on how to identify and avoid common scams and where to get help if you've been affected by a scammer.
+      </p>
+      <p class="text-purple-700 font-medium cursor-pointer">Read More <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></p>
+    </li>
+
+    <!-- Social -->
+    <li class="group bg-[#f8f8f8] hover:bg-[#dcf40c] transition-all duration-300 rounded-md p-[26px] w-full md:w-[48%] lg:w-[24.2%]">
+      <p class="font-semibold text-[20px] mb-2 pt-[24px] mb-6 pt-[52px]">Social media safety</p>
+      <div class="border-b border-dashed border-gray-400 mb-6"></div>
+      <p class="text-[16px] text-gray-800 mb-6">
+      Whatever platform you prefer, we have the guides to take you through family safety settings, personal privacy, 
+      reporting, blocking and how Netsafe can help. 
+      </p>
+      <p class="text-purple-700 font-medium cursor-pointer">Read More <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></p>
+    </li>
+
+    <!-- Gaming -->
+    <li class="group bg-[#f8f8f8] hover:bg-[#dcf40c] transition-all duration-300 rounded-md p-[26px] w-full md:w-[48%] lg:w-[24.2%]">
+      <p class="font-semibold text-[20px] mb-2 pt-[24px] mb-6 pt-[52px]">Gaming</p>
+      <div class="border-b border-dashed border-gray-400 mb-6"></div>
+      <p class="text-[16px] text-gray-800 mb-24">
+      Advice for children and adults to support positive online gaming experiences.
+      </p>
+      <p class="text-purple-700 font-medium cursor-pointer">Read More <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i> </p>
+    </li>
+  </ul>
+</div>
+      </div>
+          
+        </div>
+        <div class="flex justify-center items-center mb-8 space-x-4">
+            <button
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300">
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300">
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <div class="flex space-x-2">
+              <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+              <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+              <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+      <div class=" bg-[#333] py-15 pl-4 lg:pl-0 flex items-center justify-between relative pull-quote print:!min-h-0 print-py print:pl-0 bg-black-80 print:bg-white flex-col pr-4 md:pr-0 md:flex-row  lg:pt-15">
+         <svg width="220" height="429" viewBox="0 0 220 429" fill="none" xmlns="http://www.w3.org/2000/svg" 
+          aria-hidden="true" class="hidden lg:block pull-quote__left-svg print:hidden max-w-[13.75rem]" >
+            <rect x="190" y="506" width="70" height="33" transform="rotate(-180 129 276)" fill="white"></rect>
+            <rect x="70" y="499" width="70" height="33" transform="rotate(-180 70 429)" fill="#AA23FF"></rect>
+            <rect x="129" y="296" width="129" height="33" transform="rotate(-180 129 276)" fill="black"></rect>
+            <rect x="70" y="329" width="70" height="33" transform="rotate(-180 70 309)" fill="#DDF606"></rect>
+          </svg>
+          <div class="ml-[80px] w-[68%]">
+            <h2 class="text-[#c2e326] text-[30px] font-medium mb-6 mt-10">
+                Scams cost the New Zealand economy:
+              </h2>
+              <p class="text-[90px] text-white font-medium">$2billion annually</p>
+              <p class="text-[#c2e326] text-[24px] font-medium mb-16">
+                "Crucially, there is no government funding for incident response and victim remediation. 
+                Netsafe's helpline processes 15,000 scam reports a year from victims. 
+                Netsafe isn’t yet funded for this work." - Brent Carey, CEO 
+              </p>
+              <p class="text-[16px] font-medium text-white mb-16 hover:text-[#c2e326] transition-colors duration-300 cursor-pointer">
+                Find out more about our scams helpline <i style="margin-left: 16px;" class="fa-solid fa-arrow-right"></i>
+              </p>
+          </div>
+          <svg width="220" height="444" viewBox="0 0 220 444" fill="none" xmlns="http://www.w3.org/2000/svg" 
+          aria-hidden="true" class="hidden md:block pull-quote__right-svg  print:hidden max-w-[13.75rem]" >
+            <rect x="50" y="119" width="260" height="34" fill="#DDA7FF"></rect>
+            <rect x="126.762" width="95" height="33" fill="#BB4FFF"></rect>
+            <rect x="281" y="444" width="40" height="33" transform="rotate(-180 281 444)" fill="black"></rect>
+            <rect x="153" y="33" width="33" height="33" fill="white"></rect>
+          </svg>
+      </div>
+
+      <div class="bg-white font-sans">
+        <div class="container mx-auto p-4 max-w-2xl">
+          <div class="bg-yellow-400 h-2 mb-4"></div>
+          <h1 class="text-3xl font-bold mb-4">Campaigns & Tools</h1>
+          <div class="space-y-4 mb-6">
+            <h2 class="text-purple-900">Headspace Invaders</h2>
+            <hr class="border-purple-300" />
+            <p class="text-gray-600">Netsafety Week 2025</p>
+            <hr class="border-gray-300" />
+            <p class="text-gray-600">Spicy Noods</p>
+            <hr class="border-gray-300" />
+            <p class="text-gray-600">Re:Scam Returns</p>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Click on the images to learn more about our recent impactful
+            campaigns
+            and product launches...
+          </p>
+          <div class="bg-purple-600 h-64 mb-4"></div>
+          <!-- Placeholder for image -->
+          <div class="bg-purple-900 h-2"></div>
+        </div>
+      </div>
+
+      <div class="bg-yellow-300 font-sans">
+        <div class="container mx-auto p-4 max-w-md">
+          <div class="bg-purple-900 h-4 mb-4"></div>
+          <div class="bg-black h-1 mb-4"></div>
+          <div class="bg-purple-300 h-1 mb-4"></div>
+          <h1 class="text-3xl font-bold mb-2">Real Impact</h1>
+          <p class="text-gray-800 mb-4">
+            While our work has a very human impact, it can also be measured in
+            some pretty big numbers...
+          </p>
+          <a href="#" class="text-purple-900 font-medium mb-6 block">Read more
+            →</a>
+          <h2 class="text-5xl font-bold mb-2">23,213</h2>
+          <p class="text-gray-800 mb-4">
+            Reports of online harm to the Netsafe helpline last year
+          </p>
+          <div class="flex justify-between mb-4">
+            <div>
+              <p class="text-3xl font-bold">86.6%</p>
+              <p class="text-gray-800">
+                Overall satisfaction rate: our Harmful Digital Communications
+                service
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold">$17.8m</p>
+              <p class="text-gray-800">
+                Total monetary losses from scams reported to Netsafe last year
+              </p>
+            </div>
+          </div>
+          <div class="bg-purple-300 h-1 mb-4"></div>
+          <div class="bg-yellow-400 h-2"></div>
+        </div>
+      </div>
+
+      <div class="bg-white font-sans">
+        <div class="container mx-auto p-4 max-w-md">
+          <div
+            class="bg-purple-800 h-96 mb-4 flex items-center justify-center relative">
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Handshake"
+              class="absolute inset-0 w-full h-full object-cover opacity-50" />
+            <div class="relative z-10 text-center text-white">
+              <h1 class="text-3xl font-bold">Partnerships</h1>
+              <h2 class="text-4xl font-bold mt-2">Working with Netsafe</h2>
+              <p class="mt-4 text-lg">
+                Our work benefits hundreds of thousands of New Zealanders every
+                year. We do our best work when we do it in partnership with
+                others. If you’d like to collaborate with us, we have a number
+                of
+                programmes and initiatives suitable for sponsorship, pro-bono
+                support, grant funding, donations or collaborations.
+              </p>
+              <a href="#" class="mt-4 inline-block text-white font-medium">Find
+                out more here →</a>
+            </div>
+          </div>
+          <div class="flex justify-between items-center mb-4">
+            <img
+              src="https://via.placeholder.com/100x50"
+              alt="INHOPE Logo"
+              class="h-10" />
+            <img
+              src="https://via.placeholder.com/100x50"
+              alt="GASA Logo"
+              class="h-10" />
+            <img
+              src="https://via.placeholder.com/100x50"
+              alt="Safe Space Logo"
+              class="h-10" />
+            <img
+              src="https://via.placeholder.com/100x50"
+              alt="Ministry of Justice Logo"
+              class="h-10" />
+          </div>
+          <div class="bg-black h-1"></div>
+        </div>
+      </div>
+
+      <div class="bg-black text-white font-sans">
+        <div class="container mx-auto p-4 max-w-md">
+          <h1 class="text-2xl font-bold mb-2">Sign up to our newsletter</h1>
+          <p class="text-gray-400 mb-4">
+            The latest resources, articles and tips from Netsafe delivered
+            directly to your inbox.
+          </p>
+          <button
+            class="bg-yellow-400 text-black font-bold py-2 px-4 w-full mb-4">
+            Sign up
+          </button>
+          <hr class="border-gray-700 mb-4" />
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <a href="#" class="text-gray-300 hover:text-white">Advice &
+                Support</a>
+              <span class="text-gray-400">+</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-gray-300 hover:text-white">Issues &
+                Topics</a>
+              <span class="text-gray-400">+</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-gray-300 hover:text-white">About
+                Netsafe</a>
+              <span class="text-gray-400">+</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-gray-300 hover:text-white">Our Work</a>
+              <span class="text-gray-400">+</span>
+            </div>
+          </div>
+          <div class="mt-8 flex justify-center">
+            <svg
+              class="w-40 h-20 text-gray-600"
+              fill="currentColor"
+              viewBox="0 0 200 80">
+              <text
+                x="50%"
+                y="50%"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                font-size="24"
+                font-family="Arial">
+                netsafe
+              </text>
+            </svg>
+          </div>
+          <p class="text-gray-500 text-center mt-4">
+            © 2025 Netsafe. All rights reserved.
+          </p>
+          <div class="text-gray-500 text-center space-x-4 mt-2">
+            <a href="#" class="hover:text-white">Privacy policy</a>
+            <a href="#" class="hover:text-white">Terms of use and intellectual
+              property</a>
+            <a href="#" class="hover:text-white">Accessibility</a>
+            <a href="#" class="hover:text-white">Contact us</a>
+            <a href="#" class="hover:text-white">Give feedback</a>
+          </div>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <div class="flex justify-end mt-4">
+            <div
+              class="bg-purple-300 text-black rounded-full w-16 h-16 flex items-center justify-center">
+              <span class="font-bold">Ask Kora</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
